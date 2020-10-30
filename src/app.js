@@ -11,5 +11,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //rotas
 app.use("/", require("./routes"));
+app.use("/users", require("./routes/user.routes"));
 
 module.exports = app;
